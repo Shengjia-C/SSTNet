@@ -1,4 +1,4 @@
-# SSTNet: Sliced spatio-temporal network with cross-slice ConvLSTM for moving infrared dim-small target detection
+# (TGRS2024) SSTNet: Sliced spatio-temporal network with cross-slice ConvLSTM for moving infrared dim-small target detection
 
 ![outline](./readme/method.png)
 
@@ -11,7 +11,9 @@ Infrared dim-small target detection, as an important branch of object detection,
 
 - Datasets are available at [DUAB](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) and [IRDST](https://xzbai.buaa.edu.cn/datasets.html).
 
-- The COCO format need to convert to txt format.
+
+- The COCO format json file needs to be converted into a txt format file. We provide txt format files for DAUB ([training](./coco_train_DAUB.txt) and [test](./coco_val_DAUB.txt)) and IRDST  ([training](./coco_train_IRDST.txt) and [test](./coco_val_IRDST.txt)).
+- Or you can generate a new txt file based on the path of your datasets. We provide [json](./json) files for DAUB and IRDST.
 ``` python 
 python utils_coco/coco_to_txt.py
 ```
@@ -26,7 +28,7 @@ python utils_coco/coco_to_txt.py
 * opencv-python==4.7.0.72
 * pillow==9.5.0
 * scipy==1.10.1
-* Tested on Ubuntu 20.04, with CUDA 11.3, and 2x NVIDIA 3090.
+* Tested on Ubuntu 20.04, with CUDA 11.3, and 1x NVIDIA 3090.
 
 
 ## Usage
@@ -49,10 +51,9 @@ python vid_predict.py
 ## Results
 
 - PR curve on DAUB and IRDST datasets.
-- We provide the results on DAUB and IRDST, and you can plot them using Python.
-- [Results](./readme/DAUB_results) of representative methods on DAUB.
+- We provide the results on [DAUB](./readme/DAUB_results) and [IRDST](./readme/IRDST_results), and you can plot them using Python.
+
 <img src="/readme/PR1.png" width="500px">
-- [Results](./readme/IRDST_results) of representative methods on IRDST.
 <img src="/readme/PR2.png" width="500px">
 
 ## Contact
