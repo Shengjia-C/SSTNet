@@ -2,7 +2,7 @@
 
 ![outline](./readme/method.png)
 
-## Introduction
+## Abstract
 Infrared dim-small target detection, as an important branch of object detection, has been attracting research attention in recent decades. Its challenges mainly lie in the small target sizes and dim contrast to background images. Recent research schemes on it mainly focus on improving the feature representation of spatio-temporal domains only in single-slice temporal scope. More cross-slice motion, i.e., past and future, is seldom considered to enhance target features. To utilize cross-slice motion context, this paper proposes a sliced spatio-temporal network (SSTNet) with cross-slice enhancement for moving infrared dim-small target detection.  In our scheme, a new cross-slice ConvLSTM node is designed to capture spatio-temporal motion features from both inner-slice and inter-slices. Moreover, to improve infrared small target motion feature learning, we extend conventional loss function by adopting a new motion-coordination loss term. On these, we propose a motion-coupling neck to assist feature extractor in facilitating the capturing and utilization of motion features from multi-frames. To our best knowledge, our work is the first one to explore the cross-slice spatio-temporal motion modeling for infrared dim-small targets. Experiments verify that our SSTNet could refresh most state-of-the-art metrics on two public benchmarks (DAUB and IRDST).
 
 
