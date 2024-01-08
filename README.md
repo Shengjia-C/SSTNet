@@ -46,9 +46,13 @@ python vid_map_coco.py
 python vid_predict.py
 ```
 
-## PR curve on DAUB and IRDST datasets
+## Results
 
+- PR curve on DAUB and IRDST datasets.
+- We provide the results on DAUB and IRDST, and you can plot them using Python.
+- [Results](./readme/DAUB_results) of representative methods on DAUB.
 <img src="/readme/PR1.png" width="500px">
+- [Results](./readme/IRDST_results) of representative methods on IRDST.
 <img src="/readme/PR2.png" width="500px">
 
 ## Contact
@@ -58,6 +62,22 @@ If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.co
 1. X. Shi, Z. Chen, H. Wang, D.-Y. Yeung, W.-K. Wong, and W.-c. Woo, “Convolutional lstm network: A machine learning approach for precipitation nowcasting,” Advances in Neural Information Processing Systems, vol. 28, 2015.
 2. Z. Ge, S. Liu, F. Wang, Z. Li, and J. Sun, “Yolox: Exceeding yolo series in 2021,” arXiv preprint arXiv:2107.08430, 2021.
 
+## Citation
+
+If you find this repo useful, please cite our paper. 
+
+```
+@ARTICLE{sstnet2024,
+  author={Chen, Shengjia and Ji, Luping and Zhu, Jiewen and Ye, Mao and Yao, Xiaoyong},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={SSTNet: Sliced spatio-temporal network with cross-slice ConvLSTM for moving infrared dim-small target detection}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TGRS.2024.3350024}}
+  
+```
 
 
 
