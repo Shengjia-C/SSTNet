@@ -226,7 +226,7 @@ class Network(nn.Module):
     def __init__(self, num_classes, fp16=False, num_frame=10):
         super(Network, self).__init__()
         self.num_frame = num_frame
-        self.backbone = Feature_Extractor(0.33,0.50)  
+        self.backbone = Feature_Extractor(0.33,0.50) 
 
         #-----------------------------------------#
         #   尺度感知模块
